@@ -1,0 +1,96 @@
+ENTREGABLE 1 - PRESENTACIÓN DEL CASO Y PROBLEMA
+Challenge 1: Pipeline de Machine Learning - UPCH
+Caso asignado: Tipo A - Minería de asteroides
+=====================================================================
+
+1. FUENTE DE INFORMACIÓN
+------------------------
+La única fuente factual del proyecto es la infografía "Minería de asteroides:
+Un mercado en crecimiento con grandes expectativas" (síntesis de una noticia
+de Yahoo Finance). No se usa información externa.
+
+2. DATOS REPORTADOS EN LA INFOGRAFÍA
+------------------------------------
+- Mercado proyectado: USD 2,49 mil millones (2026) y USD 5,42 mil millones (2030).
+- CAGR proyectado: 21,4 % (2026-2030).
+- 3.143 objetos espaciales lanzados en 2023, +24 % respecto al año anterior
+  (EE. UU. representa el 81 % de los lanzamientos).
+- Actores mencionados: Planetary Resources, Deep Space Industries, Asteroid
+  Mining Corporation (AMC), AstroForge, ispace (Japón), Research and Markets.
+- Tecnologías: sistemas autónomos, extracción robótica, optimización de
+  misiones, robótica espacial, detección de materiales, procesamiento de recursos.
+- Recursos de interés: metales del grupo del platino, níquel, cobalto, tierras raras.
+- Evento: acuerdo ispace + AMC para transportar el robot SCAR-E (aprox. 20 kg,
+  6 patas) a la superficie lunar como misión de demostración.
+
+3. VARIABLES NO REPORTADAS EN LA INFOGRAFÍA
+-------------------------------------------
+- Costos reales de extracción
+- Rentabilidad de las operaciones
+- Cantidad y concentración de minerales
+- Tiempo de retorno de la inversión
+- Probabilidad de éxito técnico
+- Marco regulatorio y legal
+- Impacto ambiental y geopolítico
+
+4. PROBLEMA
+-----------
+Evaluar si, con la información disponible, es posible considerar
+económicamente viable la minería de asteroides en la actualidad.
+
+Distinción clave: la infografía reporta CRECIMIENTO PROYECTADO DEL MERCADO,
+no RENTABILIDAD REAL de una misión minera. Un mercado puede crecer porque
+aumenta la inversión, el gasto o el número de misiones, sin que las misiones
+individuales sean rentables. Para calcular rentabilidad se necesitan costos,
+ingresos, probabilidades de éxito y plazos de recuperación, y la infografía
+no los reporta.
+
+5. POR QUÉ IA / MACHINE LEARNING
+--------------------------------
+- Decisión bajo incertidumbre con muchas variables interdependientes (costo,
+  recurso, éxito técnico, plazo, regulación). La IA clásica permite
+  representar el problema como espacio de estados y buscar sistemáticamente
+  qué combinaciones de condiciones lo harían viable.
+- Machine Learning (regresión) permite aprender la relación entre esas
+  variables y un indicador económico, y analizar su sensibilidad, SIEMPRE que
+  existan datos. Aquí no hay datos reales suficientes, por lo que se usa un
+  experimento didáctico con datos sintéticos.
+
+6. POSTURA (HIPÓTESIS CRÍTICA)
+------------------------------
+Postura en contra de considerar demostrada la viabilidad económica actual
+de la minería de asteroides. Se plantea como hipótesis crítica, no como
+hecho demostrado: la infografía muestra avances tecnológicos y expectativas
+de crecimiento, pero no aporta la información necesaria para confirmar la
+rentabilidad. Los resultados de los notebooks NO demuestran inviabilidad;
+muestran qué condiciones harían falta y que la infografía no las informa.
+
+7. PREGUNTA DE INVESTIGACIÓN
+----------------------------
+¿Qué condiciones económicas, técnicas y regulatorias tendrían que cumplirse
+para que la minería de asteroides sea viable, y permite la información de la
+infografía verificar que se cumplen hoy?
+
+8. OBJETIVO GENERAL
+-------------------
+Modelar la viabilidad económica de la minería de asteroides como un problema
+de búsqueda en un espacio de estados y como un experimento de regresión con
+datos sintéticos, para identificar las condiciones necesarias de viabilidad y
+la información faltante en la infografía.
+
+9. OBJETIVOS ESPECÍFICOS
+------------------------
+- Distinguir datos de la infografía, supuestos del modelo y resultados simulados.
+- Representar escenarios como estados, con operadores y restricciones.
+- Buscar los escenarios que cumplan las condiciones de viabilidad.
+- Construir un pipeline de regresión con datos sintéticos y analizar su
+  sensibilidad a los supuestos.
+
+10. JUSTIFICACIÓN DE INSUFICIENCIA DE INFORMACIÓN
+-------------------------------------------------
+Para estimar rentabilidad se requeriría, como mínimo, costos de misión y de
+extracción, cantidad y concentración del recurso, precios y demanda,
+probabilidad de éxito, plazo de retorno y costo del capital, y condiciones
+regulatorias. Ninguno de estos elementos aparece cuantificado en la
+infografía; solo hay dos valores de mercado (2026 y 2030), una tasa de
+crecimiento y un conteo de lanzamientos espaciales generales.
