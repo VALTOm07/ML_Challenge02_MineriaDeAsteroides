@@ -1,0 +1,21 @@
+PROYECTO: MINERÍA DE ASTEROIDES — ¿OPORTUNIDAD ECONÓMICA O RIESGO FINANCIERO?
+
+1. Descripción del caso
+La infografía proporcionada reporta un mercado de minería de asteroides de USD 2,49 mil millones en 2026 y proyecta USD 5,42 mil millones para 2030, con una tasa de crecimiento anual compuesta (CAGR) de 21,4 %. También reporta 3.143 objetos espaciales lanzados en 2023, un aumento del 24 % respecto al año anterior. La infografía describe avances en robótica, automatización y misiones de demostración.
+
+2. Problema
+¿Cómo organizar y evaluar escenarios hipotéticos de una misión de minería de asteroides cuando faltan datos suficientes para establecer sus costos, ingresos recuperables, probabilidad de éxito y tiempo de retorno de inversión?
+
+3. Justificación del uso de IA y Machine Learning
+La búsqueda en espacios de estados permite explorar secuencias de evaluación y comprobar restricciones de forma explícita. Un experimento de regresión permite enseñar cómo se relacionan variables numéricas dentro de un conjunto de datos. Sin embargo, al no contar con datos reales suficientes de misiones mineras, el modelo predictivo de este repositorio será didáctico y usará datos sintéticos claramente identificados. No se utilizará para afirmar rentabilidad real.
+
+4. Postura
+La información de la infografía muestra expectativas de crecimiento y avances tecnológicos, pero no aporta los costos reales ni los ingresos netos de una misión minera. Por tanto, la viabilidad económica actual no queda demostrada con la información disponible. Esto no significa que la inviabilidad esté demostrada.
+
+5. Variables
+Datos reportados: valor de mercado de 2026 y proyección para 2030, CAGR de 21,4 %, objetos espaciales lanzados en 2023 y aumento del 24 %.
+Variables desconocidas: costos reales de extracción, rentabilidad de operaciones, cantidad y concentración de minerales, tiempo de retorno de inversión, probabilidad de éxito técnico, marco regulatorio, impacto ambiental y riesgos geopolíticos.
+Supuestos de simulación: costos e ingresos hipotéticos, probabilidad de éxito asignada para el escenario, duración estimada y umbrales de evaluación definidos por el usuario.
+
+6. Alcance
+Este trabajo construye un modelo conceptual y experimentos educativos. No constituye una valoración financiera ni una predicción sobre el desempeño real de la industria.
