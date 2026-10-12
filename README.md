@@ -2,6 +2,14 @@
 
 Proyecto académico de Machine Learning — UPCH, 2026-2.
 
+<p align="center">
+  <img
+src="https://github.com/VALTOm07/ML_Challenge02_MineriaDeAsteroides/blob/main/assets/imagenes/infografia.png"
+    alt="infografia_minAst"
+    width="1000"
+    >
+</p>
+
 Este repositorio explora cómo representar y analizar el problema de evaluar una misión hipotética de minería de asteroides mediante un espacio de estados, algoritmos de búsqueda y un experimento didáctico de regresión.
 
 > **Postura del proyecto:** la información disponible no es suficiente para demostrar la viabilidad económica de una misión minera real. Esto no demuestra que sea inviable.
