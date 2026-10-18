@@ -25,10 +25,10 @@ Representar una secuencia de evaluación que ayude a identificar qué informaci�
 
 ## Operadores
 
-1. `evaluar_tecnologia`: S0 → S1.
-2. `calcular_economia`: S1 → S2.
-3. `revisar_restricciones`: S2 → S3.
-4. `clasificar_resultado`: S3 → S4 o S5.
+1. `evaluar_tecnologia`: S0 → S1 si se completa la evaluación tecnológica. Si no cumple el umbral, el resultado puede dirigirse a S5.
+2. `calcular_economia`: S1 → S2 si se dispone de los datos económicos necesarios. Si faltan datos, se dirige a S5.
+3. `revisar_restricciones`: S2 → S3 si se pueden comprobar las restricciones seleccionadas. Si falta evidencia, se dirige a S5.
+4. `clasificar_resultado`: S3 → S4 si se cumplen todos los criterios del escenario; de lo contrario, S3 → S5.
 
 ## Restricciones conceptuales
 
@@ -42,11 +42,20 @@ Representar una secuencia de evaluación que ayude a identificar qué informaci�
 
 ```mermaid
 flowchart TD
-    S0[ S0 · Inicio ] --> S1[ S1 · Evaluación tecnológica ]
-    S1 --> S2[ S2 · Evaluación económica ]
-    S2 --> S3[ S3 · Revisión de restricciones ]
-    S3 -->|Criterios del escenario cumplidos| S4[ S4 · Evaluación preliminar favorable ]
-    S3 -->|Criterios no cumplidos o evidencia insuficiente| S5[ S5 · Requiere más evidencia ]
+    S0["S0 · Inicio"] --> T{"¿Tecnología evaluada?"}
+    T -->|Sí| S1["S1 · Tecnología revisada"]
+    T -->|No cumple el umbral| S5["S5 · Requiere más evidencia"]
+
+    S1 --> E{"¿Hay datos económicos suficientes?"}
+    E -->|Sí| S2["S2 · Economía calculada"]
+    E -->|No| S5
+
+    S2 --> R{"¿Se pueden comprobar las restricciones?"}
+    R -->|Sí| S3["S3 · Restricciones revisadas"]
+    R -->|No, falta evidencia| S5
+
+    S3 -->|Criterios cumplidos| S4["S4 · Evaluación preliminar favorable"]
+    S3 -->|Criterios no cumplidos| S5
 ```
 
 ## Interpretación
