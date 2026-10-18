@@ -262,8 +262,9 @@ with tab_busqueda:
 
     if st.button("Ejecutar búsqueda BFS"):
         resultado_busqueda = busqueda_anchura(
-            estado_inicial,
-            GRAFO_ESTADOS
+            inicio=estado_inicial,
+            objetivo="S4",
+            grafo=GRAFO_ESTADOS
         )
 
         st.subheader("Resultado de la búsqueda")
