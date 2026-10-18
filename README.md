@@ -16,12 +16,13 @@ Este repositorio explora cómo representar y analizar el problema de evaluar una
 
 ## 🧭 Navegación
 
-- [Presentación del problema](problema.txt)
+- [Presentación del problema](problema.md)
 - [Espacio de estados](espacio_estados.md)
 - [Metodología](docs/metodologia.md)
 - [Pipeline de búsqueda](pipeline_razonamiento.ipynb)
 - [Pipeline de predicción](pipeline_prediccion.ipynb)
 - [Aplicación interactiva](app.py)
+
 
 ## 📌 Datos del caso
 
@@ -97,7 +98,8 @@ streamlit run app.py
 
 ## 📓 Google Colab
 
-Sube cada notebook a tu repositorio de GitHub y ábrelo desde Google Colab con **Archivo → Abrir cuaderno → GitHub**, pegando la URL real del repositorio. Los enlaces directos de Colab se añadirán cuando el repositorio esté publicado; no se incluyen enlaces ficticios.
+- [Abrir pipeline de búsqueda en Colab](https://colab.research.google.com/github/VALTOm07/ML_Challenge02_MineriaDeAsteroides/blob/main/pipeline_razonamiento.ipynb)
+- [Abrir pipeline de predicción en Colab](https://colab.research.google.com/github/VALTOm07/ML_Challenge02_MineriaDeAsteroides/blob/main/pipeline_prediccion.ipynb)
 
 ## ⚠️ Alcance y limitaciones
 
@@ -111,7 +113,7 @@ Sube cada notebook a tu repositorio de GitHub y ábrelo desde Google Colab con *
 
 | Entregable | Archivo |
 |---|---|
-| Presentación del caso y problema | `problema.txt` |
+| Presentación del caso y problema | `problema.md` |
 | Espacio de estados | `espacio_estados.md` |
 | Razonamiento, búsqueda y resultados | `pipeline_razonamiento.ipynb` |
 | Modelo de regresión y visualización | `pipeline_prediccion.ipynb` |
