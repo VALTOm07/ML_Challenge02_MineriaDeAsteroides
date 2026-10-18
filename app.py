@@ -135,10 +135,10 @@ with tab_escenarios:
         )
 
     escenario = Escenario(
-        costo=costo,
-        ingresos=ingreso,
-        prob_exito=prob_exito,
-        tiempo=tiempo
+        costo_mision=costo,
+        ingresos_potenciales=ingreso,
+        probabilidad_exito=prob_exito,
+        tiempo_recuperacion=tiempo
     )
 
     resultados = escenario.resultados()
@@ -147,7 +147,12 @@ with tab_escenarios:
     st.subheader("Resultados")
 
     st.write(resultados)
-    st.write("**Clasificación del escenario:**", clasificacion)
+    st.write("**Clasificación del escenario:**", clasificacion["estado"])
+    st.write("**Criterios evaluados:**")
+    st.write(f"- Probabilidad suficiente: {clasificacion['cumple_probabilidad']}")
+    st.write(f"- Tiempo aceptable: {clasificacion['cumple_tiempo']}")
+    st.write(f"- Beneficio esperado positivo: {clasificacion['beneficio_esperado_positivo']}")
+    st.caption(clasificacion["nota"])
 
     st.latex(r"E = p \times I - C")
 
