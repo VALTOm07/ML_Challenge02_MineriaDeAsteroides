@@ -1,6 +1,33 @@
-# 🚀 Minería de Asteroides: ¿Oportunidad económica o riesgo financiero?
+<div align="center">
 
-Proyecto académico de Machine Learning — UPCH, 2026-2.
+  <img
+    src="https://capsule-render.vercel.app/api?type=soft&color=0:0D1B2A,50:3C096C,100:0077B6&height=120&section=header&text=MINERIA%20DE%20ASTEROIDES&fontSize=30&fontColor=FFFFFF&animation=fadeIn"
+    width="100%"
+    alt="Encabezado espacial"
+  />
+
+  <p>
+    <strong>Exploración de soluciones mediante Inteligencia Artificial</strong>
+  </p>
+
+  <img src="https://img.shields.io/badge/Machine-Learning-7B2CBF?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Algoritmo-BFS-0077B6?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Modelo-Regresión%20Lineal-2D6A4F?style=for-the-badge">
+
+  <p>
+    <em>¿Es viable la minería de asteroides? Exploremos el problema mediante búsqueda y predicción.</em>
+  </p>
+
+</div>
+
+<div align="center">
+
+  <img
+    src="https://readme-typing-svg.demolab.com?font=Orbitron&size=24&duration=3000&pause=1000&color=FFBF00&center=true&vCenter=true&width=600&lines=Explorando+el+espacio;Buscando+soluciones+con+BFS;Prediciendo+con+Machine+Learning"
+    alt="Texto animado del proyecto"
+  />
+
+</div>
 
 <p align="center">
   <img
@@ -22,6 +49,28 @@ Este repositorio explora cómo representar y analizar el problema de evaluar una
 - [Pipeline de búsqueda](pipeline_razonamiento.ipynb)
 - [Pipeline de predicción](pipeline_prediccion.ipynb)
 - [Aplicación interactiva](app.py)
+
+
+<table>
+  <tr>
+    <td align="center" width="33%">
+      <h3>🌌 Problema</h3>
+      <p>Definición del escenario</p>
+      <a href="problema.md">Explorar →</a>
+    </td>
+    <td align="center" width="33%">
+      <h3>🔍 Búsqueda</h3>
+      <p>Exploración mediante BFS</p>
+      <a href="pipeline_razonamiento.ipynb">Explorar →</a>
+    </td>
+    <td align="center" width="33%">
+      <h3>📈 Predicción</h3>
+      <p>Modelo de regresión lineal</p>
+      <a href="pipeline_prediccion.ipynb">Explorar →</a>
+    </td>
+  </tr>
+</table>
+
 
 
 ## 📌 Datos del caso
@@ -51,7 +100,7 @@ El crecimiento del mercado y la cantidad de objetos espaciales no miden directam
 ```text
 mineria-asteroides-ml/
 ├── README.md
-├── problema.txt
+├── problema.md
 ├── espacio_estados.md
 ├── pipeline_razonamiento.ipynb
 ├── pipeline_prediccion.ipynb
@@ -118,3 +167,13 @@ streamlit run app.py
 | Razonamiento, búsqueda y resultados | `pipeline_razonamiento.ipynb` |
 | Modelo de regresión y visualización | `pipeline_prediccion.ipynb` |
 | Experiencia interactiva | `app.py` |
+
+
+<div align="center">
+  <img
+    src="https://github.com/VALTOm07/ML_Challenge02_MineriaDeAsteroides/blob/main/assets/imagenes/GIF_ESPACIAL.gif"
+    width="100%"
+    alt="Animación del espacio"
+  />
+</div>
+
