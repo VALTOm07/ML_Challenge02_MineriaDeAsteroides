@@ -114,6 +114,7 @@ mineria-asteroides-ml/
 ├── assets/
 │   └── imagenes/
 │       └── infografia.png
+│       └── GIF_ESPACIAL.gif
 └── docs/
     └── metodologia.md
 ```
